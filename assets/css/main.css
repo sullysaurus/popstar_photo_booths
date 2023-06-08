@@ -2952,6 +2952,13 @@ form hr {
     margin: 0 auto;
     max-width: 1140px;
 }
+.success img {
+    display: block;
+    height: 80%;
+    padding: 20px;
+    object-fit: scale-down;
+    width: 100%;
+}
 .our_booth_box_img img {
     display: block;
     height: 80%;
