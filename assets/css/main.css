@@ -1753,7 +1753,7 @@ ul li {
 .gallery_box_outer {
     background-blend-mode: darken;
     background-color: #101010;
-    /* background-image: url("../images/gallery_img_bg.jpg"); */
+    /* \\background-image: url("../images/gallery_img_bg.jpg"); */
     background-size: cover;
     padding: 50px 0 85px;
 }
@@ -1786,7 +1786,7 @@ ul li {
     text-align: center;
 }
 .gallery_box_cover .gallery_cont {
-    background-image: url("../images/gallery_prop.png");
+    /* background-image: url("../images/gallery_prop.png"); */
     background-repeat: no-repeat;
     background-position: 100% 100%;
 }
@@ -1919,7 +1919,7 @@ ul li {
     padding: 46px 0 225px;
 }
 .testimonial_car_box {
-    background-image: url("../images/testimonial_img_box.png");
+    background-image: url("../images/testimonial_img_box.png"); 
     background-position: center 100%;
     background-repeat: no-repeat;
     border: 1px solid #eeeeee;
