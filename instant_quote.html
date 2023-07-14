@@ -320,7 +320,7 @@
 
                     <textarea
                       name="notes"
-                      placeholder="Any notes, request or comments?"
+                      placeholder="This is just an estimate. Feel free to add any customizations you may need and we will contact you shortly."
                     ></textarea>
                     <div class="form_submit_btn">
                       <input name="submit" value="Submit" type="submit" />
@@ -360,14 +360,12 @@
               <div class="col-md-3">
                 <div class="footer_box">
                   <h3>Menu</h3>
-                  <ul>
+                  <ul class="main_header navbar-nav ml-auto">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="our_booth.html">Our Booths</a></li>
                     <li><a href="packages.html">Packages</a></li>
-                    <li><a href="get_a_quote.html">Instant Quote</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="features.html">Gallery</a></li>
-                    <li class="submenu_box"><a href="blog.html">Blog</a></li>
+                    <li><a href="instant_quote.html">Instant Quote</a></li>
+                    <li><a href="features.html">Features</a></li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
@@ -421,55 +419,13 @@
       </footer>
     </div>
 
-    <script type="text/javascript">
-      const hoursOfPhotos = document.querySelector("#hoursOfPhotos");
-      const attendant = document.querySelector("#attendant");
-      const luxUpLighting = document.querySelector("#luxUpLighting");
-      const props = document.querySelector("#props");
-      const backdrop = document.querySelector("#backdrop");
-      const branding = document.querySelector("#branding");
-      const prints = document.querySelector("#prints");
-
-      calculateTotal();
-
-      hoursOfPhotos.addEventListener("change", calculateTotal);
-      attendant.addEventListener("change", calculateTotal);
-      luxUpLighting.addEventListener("change", calculateTotal);
-      props.addEventListener("change", calculateTotal);
-      backdrop.addEventListener("change", calculateTotal);
-      branding.addEventListener("change", calculateTotal);
-      prints.addEventListener("change", calculateTotal);
-
-      function calculateTotal() {
-        let total = 0;
-        let hourlyRate = 175; // Default hourly rate
-
-        // If attendant is set to Yes, adjust the hourly rate
-        if (attendant.value == "1") {
-          // Changed from 'yes' to '1'
-          hourlyRate = 200;
-        }
-
-        total += Number(luxUpLighting.value);
-        total += Number(props.value);
-        total += Number(backdrop.value);
-        total += Number(branding.value);
-        total += Number(prints.value);
-
-        total += Number(hoursOfPhotos.value) * hourlyRate;
-
-        // Use toFixed(2) to format the total with two decimal places
-        document.querySelector("#totalCost").textContent =
-          "Total Price: $" + total.toFixed(2);
-      }
-    </script>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/ekko-lightbox.min.js"></script>
     <script src="assets/js/aos.min.js"></script>
-
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/calculator.js" type="text/javascript"></script>
   </body>
 </html>
