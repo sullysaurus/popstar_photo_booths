@@ -1739,14 +1739,7 @@ ul li {
     background-color: #ef0160;
     color: #fff;
 }
-.sec_heading_box::before {
-    background-color: #d5d5d5;
-    content: "";
-    display: block;
-    height: 85px;
-    /* margin: 0 auto 32px; */
-    width: 1px;
-}
+
 .sec_heading_box.no_line_heading:before {
     display: none;
 }
@@ -1850,6 +1843,7 @@ ul li {
     font-size: 28px;
     font-weight: 100;
 }
+
 .ourbooth_box_outer h3 span {
     font-weight: 400;
     color: #ef0160;
