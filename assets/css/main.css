@@ -3545,9 +3545,18 @@ form hr {
     .ourbooth_contact li i.fa-envelope {
         top: 0;
     }
-    .banner_content {
+    /* .banner_content {
         display: none;
+    } */
+
+    .banner_item h2 {
+      font-size: 16px;
     }
+
+    .banner_item h3 {
+        font-size: 12px;
+    }
+
     .header_social_box::before {
         background-color: #353535;
     }
