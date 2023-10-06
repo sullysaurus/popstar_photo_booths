@@ -3934,3 +3934,34 @@ form hr {
         margin-bottom: 40px;
     }
 }
+
+.banner_item {
+    background-image: url('../images/header_10.jpeg');
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center center;  
+    height: 900px; 
+    position: relative; 
+}
+
+/* Media Query for Tablets */
+@media screen and (max-width: 768px) {
+    .banner_item {
+        height: 600px;   /* Reduced height for tablets */
+    }
+}
+
+/* Media Query for Mobiles */
+@media screen and (max-width: 480px) {
+    .banner_item {
+        height: 400px;   /* Further reduced height for mobile phones */
+        background-position: center top;  /* Adjusted background position to show the top of the image which often contains the main content */
+    }
+}
+
+.banner_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
