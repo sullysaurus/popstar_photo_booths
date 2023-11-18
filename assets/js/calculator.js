@@ -18,7 +18,7 @@ prints.addEventListener("change", calculateTotal);
 
 function calculateTotal() {
   let total = 0;
-  let hourlyRate = 175; // Default hourly rate
+  let hourlyRate = 150; // Default hourly rate
 
   // If attendant is set to Yes, adjust the hourly rate
   if (attendant.value == "1") {
