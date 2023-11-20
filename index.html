@@ -338,6 +338,28 @@
   <script src="assets/js/ekko-lightbox.min.js"></script>
   <script src="assets/js/aos.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Use setTimeout to wait for 5 seconds
+    setTimeout(function() {
+        // Select the element to be removed
+        var elementToRemove = document.querySelector('#eapps-google-reviews-8164c114-40b6-4539-90d4-0368aa3a51ee > div > a');
+        
+        // Log the element to inspect it in the console
+        console.log(elementToRemove);
+
+        // Check if the element exists before attempting to remove it
+        if (elementToRemove) {
+            // Remove the element
+            elementToRemove.remove();
+            console.log('Element removed successfully!');
+        } else {
+            console.log('Element not found. Nothing to remove.');
+        }
+    }, 1000); // 5000 milliseconds = 5 seconds
+});
+
+  </script>
 </body>
 
 </html>

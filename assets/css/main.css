@@ -3965,3 +3965,8 @@ form hr {
     left: 50%;
     transform: translate(-50%, -50%);  
 }
+
+#eapps-google-reviews-8164c114-40b6-4539-90d4-0368aa3a51ee > div > a{ 
+    display: none;
+    background-color: transparent;
+}
